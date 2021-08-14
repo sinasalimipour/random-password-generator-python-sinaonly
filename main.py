@@ -4,15 +4,13 @@ import tkinter
 import random
 
 root = Tk()
-myLabel = Label(root, text="hello world")
-myLabel1 = Label(root, password_len=int(input("what length would you like to your password be:")))
-myLabel.grid()
-myLabel1.grid()
+
+myLabel = Label(root, text="hello world").grid(row=0, column=0)
+myLabel1 = Label(root, text="what length would you like to your password be:").grid(row=1, column=0)
+
+
+
 root.mainloop()
-
-
-
-
 
 
 
