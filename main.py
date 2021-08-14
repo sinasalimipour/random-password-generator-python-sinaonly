@@ -5,11 +5,10 @@ import random
 
 root = Tk()
 myLabel = Label(root, text="hello world")
-
-myLabel.pack()
-
-
-
+myLabel1 = Label(root, password_len=int(input("what length would you like to your password be:")))
+myLabel.grid()
+myLabel1.grid()
+root.mainloop()
 
 
 
@@ -19,6 +18,7 @@ myLabel.pack()
 
 
 # #password-GENRATOR start
+
 # chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789!@#$%^&*()_+}{"
 # while 1:
 #     password_len = int(input("what length would you like to your password be:"))
@@ -29,4 +29,5 @@ myLabel.pack()
 #             password_char = random.choice(chars)
 #             password = password + password_char
 #         print("here is your password",password)
+
 # #password-GENRATOR end
