@@ -5,9 +5,18 @@ import random
 
 root = Tk()
 
-myLabel = Label(root, text="hello world").grid(row=0, column=0)
-myLabel1 = Label(root, text="what length would you like to your password be:").grid(row=1, column=0)
 
+e = Entry(root,borderwidth=10,).grid(row=5, column=0)
+
+
+
+def myClick():
+    txtforpassword = Label(root, text="here your password with length of:"+ e.get()).grid()
+
+
+welcometext = Label(root, text="welcome to the password generator").grid(row=0, column=0)
+lengthtext = Label(root, text="what length would you like to your password be:").grid(row=1, column=0)
+Buttonforpassword = Button(root, text="find me a random password",command=myClick,fg="blue",bg="black").grid()
 
 
 root.mainloop()
