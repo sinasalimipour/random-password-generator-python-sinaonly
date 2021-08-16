@@ -4,9 +4,9 @@ import tkinter
 import random
 
 root = Tk()
+root.title("password generator")
 
-
-e = Entry(root,borderwidth=10,).grid(row=5, column=0)
+e = Entry(root,borderwidth=5,).grid(row=5, column=0,columnspan=10)
 
 
 
